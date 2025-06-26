@@ -1,0 +1,375 @@
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  min-height: 100vh;
+  background-color: #f6f9f3;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+}
+
+.brand-name {
+  font-weight: 600;
+  color: #166534;
+  font-size: 1.125rem;
+  user-select: none;
+}
+
+.nav-links {
+  display: none;
+  list-style: none;
+  gap: 2rem;
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: text-decoration 0.2s;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.cta-button {
+  background-color: #166534;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #14532d;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  background: linear-gradient(90deg, #3ca34d 0%, #e6b90a 100%);
+  border-radius: 12px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Trust Badge */
+.trust-badge {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(22, 101, 52, 0.3);
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.trust-text-mobile {
+  display: inline;
+}
+
+.trust-text {
+  display: none;
+}
+
+/* Hero Content */
+.hero-content {
+  margin-top: 3rem;
+}
+
+.hero-title {
+  color: white;
+  font-weight: 800;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.mpesa-text {
+  color: #b35a00;
+  filter: drop-shadow(2px 2px 2px rgba(179, 90, 0, 0.7));
+}
+
+.hero-description {
+  color: white;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.highlight-text {
+  font-weight: 600;
+  color: #fbbf24;
+}
+
+/* CTA Section */
+.cta-section {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.start-trading-btn {
+  background-color: white;
+  color: #166534;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+.start-trading-btn:hover {
+  background-color: #f0fdf4;
+}
+
+.amount-input {
+  border-radius: 6px;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+.amount-input:focus {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+/* Exchange Flow */
+.exchange-flow {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  user-select: none;
+  padding: 0 1rem;
+}
+
+.exchange-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exchange-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.btc-icon {
+  background-color: #fbbf24;
+}
+
+.kes-icon {
+  background-color: #166534;
+}
+
+.mpesa-icon {
+  background-color: #f04e23;
+}
+
+.phone-icon {
+  width: 12px;
+  height: 16px;
+}
+
+.exchange-arrow {
+  color: white;
+  transform: rotate(90deg);
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  
+  .trust-badge {
+    top: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .trust-text-mobile {
+    display: none;
+  }
+  
+  .trust-text {
+    display: inline;
+  }
+  
+  .hero-content {
+    margin-top: 4rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .cta-section {
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+  
+  .start-trading-btn {
+    width: auto;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .amount-input {
+    width: 6rem;
+  }
+  
+  .exchange-flow {
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .exchange-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .exchange-arrow {
+    transform: rotate(0deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+  
+  .hero-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .hero-title {
+    font-size: 3.75rem;
+  }
+  
+  .hero-description {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    padding: 5rem 1.5rem;
+  }
+  
+  .hero-content {
+    margin-top: 5rem;
+  }
+  
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1.25rem;
+  }
+  
+  .exchange-flow {
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-title {
+    font-size: 5rem;
+  }
+}
