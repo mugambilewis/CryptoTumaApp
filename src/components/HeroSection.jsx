@@ -13,12 +13,7 @@ const HeroSection = () => {
       </div>
 
       <div className="z-10 text-center max-w-4xl mx-auto relative container py-8">
-        {/* Logo */}
-        <div className="text-3xl font-black flex justify-center items-center gap-1 mb-4">
-          <span className="text-[#f7b916] transform -rotate-[15deg] leading-none">₿</span>
-          <span className="text-white font-black">Crypto</span>
-          <span className="text-[#f7b916] font-black">Tuma</span>
-        </div>
+        
 
         {/* Heading */}
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
